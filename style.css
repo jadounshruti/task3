@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background: linear-gradient(113deg,#F2BED1 24.4%,#FDCEDF 53.7%,#64CCC5 99.2%);
+}
+.container{
+    background: linear-gradient(113deg,#FF78C4 24.4%,#E1AEFF 53.7%,#FFBDF7 99.2%);
+color: white;
+width: 340px;
+height: 373px;
+border-radius: 5px;
+padding: 5px 25px;
+display: flex;
+flex-direction: column;
+gap: 28px;
+box-shadow: 8px 8px 8px white;
+}
+.container h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+   
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    padding: 2px 0 0 0;
+
+}
+#p1{
+    font-family: system-ui;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+
+}
+.input div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 165px;
+}
+#result,#inputvalue{
+    height: 40px;
+    font-size: 25px;
+    border:  1px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#result:focus,#inputvalue:focus{
+    height: 40px;
+    font-weight: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+#btn{
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn:active{
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.result{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+#inputValue{
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+#inputValue:focus{
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+#type{
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+#type:focus{
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+label{
+    font-size: 17px;
+    font-family: -webkit-pictograph;
+   
+}
+@media only screen and (max-width:400px){
+    .container{
+        transform: scale(0.9);
+    }
+}
+@media only screen and (max-width:375px){
+    .container{
+        transform: scale(0.8);
+    }
+}
